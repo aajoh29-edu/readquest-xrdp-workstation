@@ -324,7 +324,7 @@ docker compose logs --tail=100 api frontend db
 
 For the prior ReadQuest deployment, the frontend was intended to be exposed on **localhost:8081**. Verify the actual published port with `docker compose ps`; do not assume the old value is still correct. If the frontend fails, check the Nginx upstream configuration and whether API is on the correct Compose network.
 
-Windows browser: open `http://localhost:8081` **only if** the application Compose file actually publishes that port. You can use `curl`/tests in the XRDP workstation, but remember the desktop container's `localhost` is its **own** network namespace and not the Windows host.
+Windows browser: open `http://localhost:8000` **only if** the application Compose file actually publishes that port. You can use `curl`/tests in the XRDP workstation, but remember the desktop container's `localhost` is its **own** network namespace and not the Windows host.
 
 ## 8. Daily start, stop, recovery and update commands
 
